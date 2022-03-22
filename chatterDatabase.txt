@@ -1,0 +1,16 @@
+- Chatter Database -
+Tracks number of chatters
+Makes streak of returning users like snapchat
+let chatter search their username to view their chat history
+grade the chatter; lurker,active,cringe
+    lurker - based on channel average chattings if below bottom 25%
+    active - based on if chatter messages above 50%
+    cringe - user uses any cringe words
+shows users most used word/emote
+    if emote load the emote from bttv
+show channel badge if subbed to any channels
+if a creator show creator badge
+
+
+twitch OAUTH
+oauth:fnycrt2te4f85bsxkusxion5035lly
