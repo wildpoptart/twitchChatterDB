@@ -48,6 +48,9 @@ def main():
     dbF.combineData()
     dbF.dupRemove()
 
+    #display
+    dbF.printDataTerminal()
+
 
 if __name__ == '__main__':
     main()

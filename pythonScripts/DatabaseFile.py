@@ -46,3 +46,11 @@ def dupRemove():
         c.execute("DELETE FROM USERS WHERE EXISTS (SELECT 1 FROM USERS p2 WHERE USERS.Name = p2.Name AND USERS.Type = p2.Type AND USERS.Watches = p2.Watches AND USERS.ROWID > p2.ROWID)")
         #print(c.fetchall())
     conn.close()
+
+def printDataTerminal():
+    conn = sqlite3.connect(r'C:\Users\Stas\Documents\coding\twitchChatterDB\chatterDB.db')
+    c = conn.cursor()
+    print('\nData in Chatter table:')
+    data=c.execute('''SELECT * FROM USERS ORDER BY NAME''')
+    for row in data:
+        print(row)
